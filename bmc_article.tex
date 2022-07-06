@@ -52,6 +52,7 @@
 %\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
 \usepackage{graphicx}
 \usepackage{placeins}
+\usepackage{subcaption}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                             %%
@@ -516,14 +517,27 @@ Data have been collected using a Redmi Note 8 Pro phone consisting of 67 videos
 with 30fps captured by asking each patient for putting the index finger on the
 camera and the flash as shown in the figure 3.3 for at least 8 seconds, the
 labels for each video recorded using GRANZIA pulse-304.
-% TODO: put the figure
+\begin{figure}[h!]
+  \includegraphics[width=.5\linewidth]{png_images/collecting_data_picture.png}
+  \caption{\csentence{Sample figure title.}
+      A short description of the figure content should go here.}
+\end{figure}
+\FloatBarrier
+% TODO: change the labels
 \subsubsection*{Preprocessing}
 Each video divided into array of frames, each frame converted into a signal of
 the mean values of each RGB color channel, then the final arrays down-sampled to
 the middle 154 values as shown in Figure 3-4 as it’s the most consistent using
 Equation. (4), then the data split to 8:2 ratio the 80% used for training and
 the second part used for validation.
-% TODO: put the figure
+\begin{figure}[h!]
+  \includegraphics[width=.9\linewidth]{png_images/preporcessing.png}
+  \caption{\csentence{Sample figure title.}
+      A short description of the figure content should go here.}
+\end{figure}
+\FloatBarrier
+
+% TODO: Change description
 \subsubsection*{Training}
 The preprocessed data trained using deep learning algorithm specifically FCN as
 it performs tremendously with the time-series problems including the scaler as
@@ -531,6 +545,12 @@ the first layer for normalized input and the global average pooling for
 estimating a single value as the final output the model consists of the
 constitutional layers show in Fig3.5 trained for 250 epochs with batch size of
 32.
+\begin{figure}[h!]
+  \includegraphics[width=.9\linewidth]{png_images/spo2_model.png}
+  \caption{\csentence{Sample figure title.}
+      A short description of the figure content should go here.}
+\end{figure}
+\FloatBarrier
 
 % TODO: put the figure
 
@@ -547,7 +567,14 @@ plus button, also show all the vital signs measurement  as time series chart to
 view the whole day  data, connections page show all the connections and requests
 and the upper text field give the user the ability  to send connection request
 using email, and profile page gives the user the ability to change all his data.
-% TODO: put the figure
+\begin{figure}[h!]
+  \includegraphics[width=.9\linewidth]{png_images/applications_screens.png}
+  \caption{\csentence{Sample figure title.}
+      A short description of the figure content should go here.}
+\end{figure}
+\FloatBarrier
+
+% TODO: change descritiption
 \subsubsection*{Model Deployment}
 After training the ML model using Tensorflow Keras the trained model converted
 to TfLite file format then the generated file included in the application assets
@@ -573,6 +600,13 @@ then stored in the Firebase real time database which allows near real-time
 experience for storing, fetching the data and listen to the data changes from
 other devices which allow each user to share his real time data alongside with
 other data as shown in Figure 3-8.
+\begin{figure}[h!]
+  \includegraphics[width=.3\linewidth]{jpg_images/connection_page.jpg}
+  \caption{\csentence{Sample figure title.}
+      A short description of the figure content should go here.}
+\end{figure}
+\FloatBarrier
+
 % TODO: put the figure
 
 \subsection*{Cloud Functions}
@@ -596,6 +630,20 @@ phone automatically sends a notification warning to the users’ phone with a
 message of the related abnormal reading as shown in Figure 3-11 and to each of
 the connection send a notification warning with the name of the connection and
 the related abnormal reading as shown in Figure 3-12.
+\begin{figure}[h!]
+  \begin{subfigure}{0.45\textwidth}
+  \includegraphics[width=.3\linewidth]{jpg_images/user_warning.jpg}
+  \caption{\csentence{Sample figure title.}
+      A short description of the figure content should go here.}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}  \includegraphics[width=.7\linewidth]{png_images/connection_warnning.png}
+  \caption{\csentence{Sample figure title.}
+      A short description of the figure content should go here.}
+    \end{subfigure}
+
+    \end{figure}
+\FloatBarrier
+
 % TODO: put the figure
 \subsubsection*{External Gadget Support}
 Due to the increasing popularity of the fitness gadget e.g. smart bands and
@@ -735,17 +783,17 @@ spbasic). \bibliography{bmc_article}      % Bibliography file (usually '*.bib' )
 %%
 %% Do not use \listoffigures as most will included as separate files
 
-\section*{Figures}
-  \begin{figure}[h!]
-  \includegraphics[width=.75\linewidth]{png_images/circuit_desing.png}
-  \caption{\csentence{Sample figure title.}
-      A short description of the figure content should go here.}
-      \end{figure}
+% \section*{Figures}
+%   \begin{figure}[h!]
+%   \includegraphics[width=.75\linewidth]{png_images/circuit_desing.png}
+%   \caption{\csentence{Sample figure title.}
+%       A short description of the figure content should go here.}
+%       \end{figure}
 
-\begin{figure}[h!]
-  \caption{\csentence{Sample figure title.}
-      Figure legend text.}
-      \end{figure}
+% \begin{figure}[h!]
+%   \caption{\csentence{Sample figure title.}
+%       Figure legend text.}
+%       \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                               %%
