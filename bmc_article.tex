@@ -88,7 +88,7 @@
 %%                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{Smart way for managing patients' vital signs}
+\title{The developement of a smart way for monitoring patients' vital signs}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                          %%
@@ -101,13 +101,17 @@
 %%                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\author[ addressref={aff1},
-   % id's of addresses, e.g. {aff1,aff2}
-   corref={aff1},                       % id of corresponding address, if any
-   noteref={n1},                        % id's of article notes, if any
-   email={jane.e.doe@cambridge.co.uk}   % email address
-]{\inits{JE}\fnm{Jane E} \snm{Doe}} \author[ addressref={aff1,aff2},
-email={john.RS.Smith@cambridge.co.uk} ]{\inits{JRS}\fnm{John RS} \snm{Smith}}
+\author[ addressref={aff1}, email={michael187107@fci.bu.edu.eg}
+   ]{\inits{MGR}\fnm{Michael G} \snm{Rizk}}
+
+\author[ addressref={aff1}, email={john.RS.Smith@cambridge.co.uk}
+]{\inits{JRS}\fnm{John RS} \snm{Smith}}
+
+\author[ addressref={aff1}, email={john.RS.Smith@cambridge.co.uk}
+]{\inits{JRS}\fnm{John RS} \snm{Smith}}
+
+\author[ addressref={aff1}, email={john.RS.Smith@cambridge.co.uk}
+]{\inits{JRS}\fnm{John RS} \snm{Smith}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                          %%
@@ -119,18 +123,12 @@ email={john.RS.Smith@cambridge.co.uk} ]{\inits{JRS}\fnm{John RS} \snm{Smith}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \address[id=aff1]{%                           % unique id
-  \orgname{Department of Zoology, Cambridge}, % university, etc
-  \street{Waterloo Road},                     %
+  \orgname{Department of Medical Informatics, Benha}, % university, etc
+  \street{Fareed Nada Street},                     %
   %\postcode{}                                % post or zip code
-  \city{London},                              % city
-  \cny{UK}                                    % country
-} \address[id=aff2]{%
-  \orgname{Marine Ecology Department, Institute of Marine Sciences Kiel},
-  \street{D\"{u}sternbrooker Weg 20},
-  \postcode{24105}
-  \city{Kiel},
-  \cny{Germany}
-}
+  \city{Benha},                              % city
+  \cny{EG}                                    % country
+} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                          %%
@@ -141,10 +139,8 @@ email={john.RS.Smith@cambridge.co.uk} ]{\inits{JRS}\fnm{John RS} \snm{Smith}}
 %%                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{artnotes}
-%\note{Sample of title note}     % note to the article
-\note[id=n1]{Equal contributor} % note, connected to author
-\end{artnotes}
+% \begin{artnotes} %\note{Sample of title note}     % note to the article
+% \note[id=n1]{Equal contributor} % note, connected to author \end{artnotes}
 
 \end{fmbox}% comment this for two column layout
 
@@ -640,7 +636,8 @@ the related abnormal reading as shown in Figure 3-12.
   \caption{\csentence{Sample figure title.}
       A short description of the figure content should go here.}
     \end{subfigure}
-    \begin{subfigure}{0.45\textwidth}  \includegraphics[width=.7\linewidth]{png_images/connection_warnning.png}
+    \begin{subfigure}{0.45\textwidth}
+    \includegraphics[width=.7\linewidth]{png_images/connection_warnning.png}
   \caption{\csentence{Sample figure title.}
       A short description of the figure content should go here.}
     \end{subfigure}
@@ -666,26 +663,24 @@ signs and the algorithm used in the heart rate achieved unexpected result using
 a technique called photoplethysmography (PPG) - is an optically acquired
 plethysmogram that may be used to identify changes in blood volume in the
 tissue's microvascular bed.\\
-We can detect the variability of reflected light and
-extract the variation of blood flow by shining a light into a blood irrigated
-tissue. As we all know, blood flow is impacted by heart rate, thus we may use
-blood flow variability to measure heart rate. The application measures the blood
-flow volume variability and displays it in a chart. Now we only need to
-calculate the heart rate, which is the frequency of the plotted signal. In our
-application, we'll use the phone's camera to shine the camera's flash and
-measure the power reflected. More specifically, we'll calculate the average
-value of the camera image's pixel intensity. The intensity measured will differ
-with the blood flow if we cover the camera and flash with our finger. I used a
-simple algorithm that measures the average and the max along our window data,
-sets the threshold to the mean of those values, and detects the peaks above that
-threshold. It then updates the BPM value with` an attenuation coefficient so we
-don’t have abrupt changes.\\
-The circuit is integrated with our mobile application
-and it measures the vital signs every two minutes. The normal ranges of these
-two vital signs: \\(a) Heart Rate: 60 to 100 beats per minute [c] 
-\\(b) Blood OxygenSaturation: 95\% or higher [d]
-These tables show the real data collected from the GRANZIA pulse oximeter and
-our application:
+We can detect the variability of reflected light and extract the variation of
+blood flow by shining a light into a blood irrigated tissue. As we all know,
+blood flow is impacted by heart rate, thus we may use blood flow variability to
+measure heart rate. The application measures the blood flow volume variability
+and displays it in a chart. Now we only need to calculate the heart rate, which
+is the frequency of the plotted signal. In our application, we'll use the
+phone's camera to shine the camera's flash and measure the power reflected. More
+specifically, we'll calculate the average value of the camera image's pixel
+intensity. The intensity measured will differ with the blood flow if we cover
+the camera and flash with our finger. I used a simple algorithm that measures
+the average and the max along our window data, sets the threshold to the mean of
+those values, and detects the peaks above that threshold. It then updates the
+BPM value with` an attenuation coefficient so we don’t have abrupt changes.\\
+The circuit is integrated with our mobile application and it measures the vital
+signs every two minutes. The normal ranges of these two vital signs: \\(a) Heart
+Rate: 60 to 100 beats per minute [c] \\(b) Blood OxygenSaturation: 95\% or
+higher [d] These tables show the real data collected from the GRANZIA pulse
+oximeter and our application:
 \section*{Tables}
 \begin{table}[h!]
 \caption{Sample table title. This is where the description of the table should go.}
@@ -741,25 +736,24 @@ manages real-time patient data in a secure database. A doctor can simply view
 both recorded and live data (including ML inference results) and provide their
 analysis accordingly. The system has a number of hardware and software
 components.\\
-The system comprises of a versatile and user-friendly programme with
-a nice interface that can monitor a patient's vitals in real-time without
-causing discomfort to the patient. To make rapid and trustworthy judgments
-locally, the system employs edge computing techniques. This function reduces
-latency and identifies any abnormal situations. The best feature of this
-programme is that it can be used on any mobile device that has a camera and a
-flash.\\
-Even from a distance, the patient and guardian can watch the patient's
-vital signs. The established system may be proven to be a requirement in the
-medical sector, particularly in today's time when people rely heavily on
-technology and expect smart solutions to their day-to-day difficulties. The
-suggested method not only relieves people from their daily exams, but it also
-helps the medical personnel by decreasing their workload and allowing them to
-handle patients remotely. This prototype might be utilized at medical camps and
-places where established hospitals are scarce. In contrast to traditional
-healthcare, which is exclusively available in hospitals, the new paradigm of
-remotely monitoring patients using cutting-edge technologies like as IoT and AI
-is the future of health care and may assist us in leveraging these technologies
-and maximizing their advantages. More sensors, i.e., measured vitals, such as an
+The system comprises of a versatile and user-friendly programme with a nice
+interface that can monitor a patient's vitals in real-time without causing
+discomfort to the patient. To make rapid and trustworthy judgments locally, the
+system employs edge computing techniques. This function reduces latency and
+identifies any abnormal situations. The best feature of this programme is that
+it can be used on any mobile device that has a camera and a flash.\\
+Even from a distance, the patient and guardian can watch the patient's vital
+signs. The established system may be proven to be a requirement in the medical
+sector, particularly in today's time when people rely heavily on technology and
+expect smart solutions to their day-to-day difficulties. The suggested method
+not only relieves people from their daily exams, but it also helps the medical
+personnel by decreasing their workload and allowing them to handle patients
+remotely. This prototype might be utilized at medical camps and places where
+established hospitals are scarce. In contrast to traditional healthcare, which
+is exclusively available in hospitals, the new paradigm of remotely monitoring
+patients using cutting-edge technologies like as IoT and AI is the future of
+health care and may assist us in leveraging these technologies and maximizing
+their advantages. More sensors, i.e., measured vitals, such as an
 electrocardiogram, blood pressure, or respiration rate, can be added as part of
 this project's future development. More decision-making elements can be
 introduced to the project to identify the likelihood of COVID, especially in the
@@ -832,17 +826,13 @@ spbasic). \bibliography{bmc_article}      % Bibliography file (usually '*.bib' )
 %%
 %% Do not use \listoffigures as most will included as separate files
 
-% \section*{Figures}
-%   \begin{figure}[h!]
+% \section*{Figures} \begin{figure}[h!]
 %   \includegraphics[width=.75\linewidth]{png_images/circuit_desing.png}
-%   \caption{\csentence{Sample figure title.}
-%       A short description of the figure content should go here.}
-%       \end{figure}
+%   \caption{\csentence{Sample figure title.} A short description of the figure
+%   content should go here.} \end{figure}
 
-% \begin{figure}[h!]
-%   \caption{\csentence{Sample figure title.}
-%       Figure legend text.}
-%       \end{figure}
+% \begin{figure}[h!] \caption{\csentence{Sample figure title.} Figure legend
+%   text.} \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                               %%
