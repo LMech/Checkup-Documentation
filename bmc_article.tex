@@ -53,6 +53,7 @@
 \usepackage{graphicx}
 \usepackage{placeins}
 \usepackage{subcaption}
+\usepackage{amsthm,amsmath}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                             %%
@@ -487,6 +488,7 @@ time for each peak the heart rate can be calculated according to Equation 1.\\
 %
 \[
  Heart Rate = \frac{60,000}{Current Peak Timestamp - Previous Peak Timestamp}
+ \tag{1}
 \]
 %
 
@@ -503,9 +505,11 @@ and the final spo2 Eq.(3) is applied which proposed by MAXIM%
 %
 \[
  Ratio = \frac{AC_r/DC_r}{AC_{ir}/DC_{ir}}
+ \tag{2}
 \]
 \[
  Blood Oxygen = (-45.06 \times Ratio + 30.354) \times Ratio + 94.845
+ \tag{3}
 \]
 %
 \cite{koon,khar,zvai,xjon,marg}.
@@ -661,7 +665,8 @@ The ML model has achieved an mea of ± 1.9461, using the FCN model on the spo2
 signs and the algorithm used in the heart rate achieved unexpected result using
 a technique called photoplethysmography (PPG) - is an optically acquired
 plethysmogram that may be used to identify changes in blood volume in the
-tissue's microvascular bed. We can detect the variability of reflected light and
+tissue's microvascular bed.\\
+We can detect the variability of reflected light and
 extract the variation of blood flow by shining a light into a blood irrigated
 tissue. As we all know, blood flow is impacted by heart rate, thus we may use
 blood flow variability to measure heart rate. The application measures the blood
@@ -674,13 +679,55 @@ with the blood flow if we cover the camera and flash with our finger. I used a
 simple algorithm that measures the average and the max along our window data,
 sets the threshold to the mean of those values, and detects the peaks above that
 threshold. It then updates the BPM value with` an attenuation coefficient so we
-don’t have abrupt changes. The circuit is integrated with our mobile application
+don’t have abrupt changes.\\
+The circuit is integrated with our mobile application
 and it measures the vital signs every two minutes. The normal ranges of these
-two vital signs: (a) Heart Rate: 60 to 100 beats per minute [c] (b) Blood Oxygen
-Saturation: 95% or higher [d]
+two vital signs: \\(a) Heart Rate: 60 to 100 beats per minute [c] 
+\\(b) Blood OxygenSaturation: 95\% or higher [d]
 These tables show the real data collected from the GRANZIA pulse oximeter and
 our application:
-
+\section*{Tables}
+\begin{table}[h!]
+\caption{Sample table title. This is where the description of the table should go.}
+      \begin{tabular}{cccc}
+        \hline
+           & Ground Truth  & Predicted & Error Rate\\ \hline
+        1 & 94 & 95 & 1\%\\
+        2 & 97 & 97 & 0\%\\
+        3 & 98 & 99 & 1\%\\
+        4 & 99 & 98 & 1\%\\
+        5 & 98 & 96 & 2\%\\
+        6 & 99 & 99 & 0\%\\
+        7 & 99 & 99 & 0\%\\
+        8 & 97 & 97 & 0\%\\
+        9 & 95 & 97 & 2\%\\
+        10& 97 & 97 & 0\%\\
+        11& 98 & 99 & 1\%\\
+        12& 96 & 99 & 3\%\\
+        13& 98 & 99 & 1\%\\ \hline
+      \end{tabular}
+\end{table}
+\section*{Tables}
+\begin{table}[h!]
+\caption{Sample table title. This is where the description of the table should go.}
+      \begin{tabular}{cccc}
+        \hline
+           & Ground Truth  & Predicted & Error Rate\\ \hline
+        1 & 75 & 73  & 2\%\\
+        2 & 112& 110 & 2\%\\
+        3 & 65 & 68  & 3\%\\
+        4 & 78 & 75  & 3\%\\
+        5 & 95 & 91  & 4\%\\
+        6 & 84 & 82  & 2\%\\
+        7 & 70 & 69  & 1\%\\
+        8 & 68 & 71  & 3\%\\
+        9 & 89 & 90  & 1\%\\
+        10& 87 & 87  & 0\%\\
+        11& 55 & 53  & 2\%\\
+        12& 88 & 91  & 3\%\\
+        13& 120& 118 & 2\%\\ \hline
+      \end{tabular}
+\end{table}
 \section*{Conclusion}
 This article constructed an IoT-based prototype and applied ML and AI approaches
 to the system. The Internet of Things gadget allows for smart monitoring of
@@ -693,13 +740,15 @@ management and monitoring. This user-friendly interface securely records and
 manages real-time patient data in a secure database. A doctor can simply view
 both recorded and live data (including ML inference results) and provide their
 analysis accordingly. The system has a number of hardware and software
-components. The system comprises of a versatile and user-friendly programme with
+components.\\
+The system comprises of a versatile and user-friendly programme with
 a nice interface that can monitor a patient's vitals in real-time without
 causing discomfort to the patient. To make rapid and trustworthy judgments
 locally, the system employs edge computing techniques. This function reduces
 latency and identifies any abnormal situations. The best feature of this
 programme is that it can be used on any mobile device that has a camera and a
-flash. Even from a distance, the patient and guardian can watch the patient's
+flash.\\
+Even from a distance, the patient and guardian can watch the patient's
 vital signs. The established system may be proven to be a requirement in the
 medical sector, particularly in today's time when people rely heavily on
 technology and expect smart solutions to their day-to-day difficulties. The
