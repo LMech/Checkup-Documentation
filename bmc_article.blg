@@ -20,52 +20,62 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Database file #1: bmc_article.bib
-Warning--entry type for "khar" isn't style-file defined
---line 45 of file bmc_article.bib
+Warning--entry type for "max30102" isn't style-file defined
+--line 95 of file bmc_article.bib
+Warning--entry type for "pulse" isn't style-file defined
+--line 100 of file bmc_article.bib
+Warning--entry type for "signs" isn't style-file defined
+--line 105 of file bmc_article.bib
+Warning--entry type for "olvl" isn't style-file defined
+--line 110 of file bmc_article.bib
 Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
+Warning--to sort, need author or key in max30102
+Warning--to sort, need author or key in pulse
+Warning--to sort, need author or key in signs
+Warning--to sort, need author or key in olvl
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-You've used 5 entries,
+You've used 11 entries,
             7128 wiz_defined-function locations,
-            1151 strings with 9684 characters,
-and the built_in function-call counts, 151657 in all, are:
-= -- 29220
-> -- 131
-< -- 68
-+ -- 18971
-- -- 53
-* -- 2975
-:= -- 25874
-add.period$ -- 6
-call.type$ -- 5
-change.case$ -- 69
-chr.to.int$ -- 125
-cite$ -- 5
-duplicate$ -- 406
-empty$ -- 1073
-format.name$ -- 135
-if$ -- 39490
+            1182 strings with 11314 characters,
+and the built_in function-call counts, 399452 in all, are:
+= -- 77152
+> -- 266
+< -- 140
++ -- 50053
+- -- 135
+* -- 7863
+:= -- 67689
+add.period$ -- 19
+call.type$ -- 11
+change.case$ -- 149
+chr.to.int$ -- 275
+cite$ -- 19
+duplicate$ -- 941
+empty$ -- 2937
+format.name$ -- 317
+if$ -- 104116
 int.to.chr$ -- 1
-int.to.str$ -- 14
-missing$ -- 157
-newline$ -- 178
-num.names$ -- 28
-pop$ -- 204
+int.to.str$ -- 27
+missing$ -- 384
+newline$ -- 322
+num.names$ -- 35
+pop$ -- 504
 preamble$ -- 1
-purify$ -- 23
-quote$ -- 10
-skip$ -- 17947
+purify$ -- 44
+quote$ -- 22
+skip$ -- 47308
 stack$ -- 0
-substring$ -- 13687
-swap$ -- 113
-text.length$ -- 91
+substring$ -- 37071
+swap$ -- 233
+text.length$ -- 204
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 208
-warning$ -- 0
-while$ -- 173
+type$ -- 411
+warning$ -- 4
+while$ -- 376
 width$ -- 0
-write$ -- 216
-(There was 1 warning)
+write$ -- 423
+(There were 8 warnings)

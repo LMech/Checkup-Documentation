@@ -317,10 +317,10 @@ In Asia and Europe, cardiovascular diseases (CVD) are the leading causes of
 death; mortality rates are greater among women and patients with poor
 socioeconomic level. The system that will monitor patients' vital metrics on a
 regular basis and give treatment recommendations based on medical data and
-health state is urgently needed [1].\\
+health state is urgently needed.\cite{app12010519}.\\
 Different surveyed articles are examined in this part to evaluate the
 performance of digital healthcare systems that have previously been established
-and how they contribute to healthcare IoT. One study [2] highlights the
+and how they contribute to healthcare IoT. One study \cite{Varshney2019IoTBE} highlights the
 necessity of healthcare monitoring systems for cardiovascular disease and the
 need for medical personnel to share data from patients living in remote
 locations. This is critical since inhabitants in rural locations are often cut
@@ -339,7 +339,7 @@ disadvantage of this technology is that it may have difficulties with latency
 and network access, particularly in remote locations. Our system includes an
 edge-based architecture that conducts local anomaly detection based on ML to
 deal with crises to handle this essential challenge.\\
-The authors of [3] follow a similar approach, emphasising the relevance of ECG
+The authors of \cite{0a1fa6938fc34df1a7b0b24631b3a22c} follow a similar approach, emphasising the relevance of ECG
 signals in cardiovascular patients. They offer an IoT-based health monitoring
 system that observes the underlying data using a statistical model called the
 Hidden Markov Model. ECG signal characteristics as collected by a sensor the aim
@@ -358,7 +358,7 @@ strong positive prediction of CVD. The disadvantage is that this article does
 not include the installation of smarter technologies based on AI and machine
 learning. As a result, additional modifications are still required to increase
 the diagnostic model's accuracy\\
-The researchers in [4] believe that advances in machine learning technology have
+The researchers in \cite{9350514} believe that advances in machine learning technology have
 enabled early illness identification and diagnosis. This is especially
 beneficial in the case of chronic ailments, such as heart disease. A bespoke
 machine is proposed in this study. In the next ten years, a learning algorithm
@@ -380,7 +380,7 @@ model using real-time patient data. Not only are numerous vitals collected in
 our suggested architecture, but robust techniques are also applied to forecast
 the health status of real-time patients.\\
 The researchers propose a method based on IoT and machine learning approaches to
-handle the issue of remote monitoring in [5]. It integrates an IoT-based sensor
+handle the issue of remote monitoring in \cite{9167660}. It integrates an IoT-based sensor
 network with Arduino, namely a pulse sensor. On the data collected for heart
 ailment categorization, this system additionally incorporates ML classification
 algorithms. The Decision Tree method, Random Backwoods classifier, and Support
@@ -394,7 +394,7 @@ diagnosis based just on pulse data does not provide a complete picture of the
 patient's health. To increase the performance of the ML model, more sensors must
 be added. As a result, we incorporated many vital sign sensors in our suggested
 system to monitor the chronic patient's health.\\
-Using federated learning on local Edge computing devices, Article [6] presents
+Using federated learning on local Edge computing devices, Article \cite{9377873} presents
 another another smart data analytics architecture for e-healthcare applications.
 The need of incorporating federated learning into the system architecture stems
 from the sensitive medical data obtained through wearable devices being kept
@@ -403,7 +403,7 @@ framework, which is divided into three modules: cloud, edge, and application.
 The authors, on the other hand, make no mention of the system's implementation.
 The study's major focus was on identifying federated learning on the edge for
 e-health system designs in order to provide service quality (quick reaction
-time) and security (data security).[7] proposes CAMISA, an AI-powered system for
+time) and security (data security).\cite{gbha} proposes CAMISA, an AI-powered system for
 remote monitoring of COVID-19 patients. The authors created a Wireless Sensor
 Network (WSN) device in the form of a smart shirt and nebulizer that is equipped
 with several sensors for obtaining a patient's physiological information. A
@@ -438,7 +438,7 @@ Besides, opening the gate to the web services giving the ability to connect to
 one of the web services SDKs for online collaborative and secure experience.\\
 The Bluetooth enabled oximeter circuit consist of 3 main components, first the
 biosensor module MAX30102 for heart rate and blood oxygen saturation continues
-monitoring [A], second the Bluetooth interface HC-05 interface for data
+monitoring \cite{max30102}, second the Bluetooth interface HC-05 interface for data
 interfacing between the circuit and the smart phone, and the micro-controller
 Arduino UNO (REV3) for all the calculations and the other other components
 integration.\\
@@ -511,8 +511,6 @@ and the final spo2 Eq.(3) is applied which proposed by MAXIM%
  \tag{3}
 \]
 %
-\cite{koon,khar,zvai,xjon,marg}.
-%\nocite{oreg,schn,pond,smith,marg,hunn,advi,koha,mouse}
 
 \subsection*{Model Training}
 \subsubsection*{Data Collection}
@@ -630,7 +628,7 @@ listener on the user’s document.
 % TODO: put the figure
 \subsubsection*{Cloud Warnings}
 All the received vital signs values compared to the known normal value according
-to [b] and classified as normal or abnormal; in case of abnormality the users’
+to \cite{pulse} and classified as normal or abnormal; in case of abnormality the users’
 phone automatically sends a notification warning to the users’ phone with a
 message of the related abnormal reading as shown in Figure 3-11 and to each of
 the connection send a notification warning with the name of the connection and
@@ -685,8 +683,8 @@ those values, and detects the peaks above that threshold. It then updates the
 BPM value with` an attenuation coefficient so we don’t have abrupt changes.\\
 The circuit is integrated with our mobile application and it measures the vital
 signs every two minutes. The normal ranges of these two vital signs: \\(a) Heart
-Rate: 60 to 100 beats per minute [c] \\(b) Blood OxygenSaturation: 95\% or
-higher [d] These tables show the real data collected from the GRANZIA pulse
+Rate: 60 to 100 beats per minute \cite{signs} \\(b) Blood OxygenSaturation: 95\% or
+higher \cite{olvl} These tables show the real data collected from the GRANZIA pulse
 oximeter and our application:
 \section*{Tables}
 \begin{table}[h!]
@@ -849,17 +847,6 @@ spbasic). \bibliography{bmc_article}      % Bibliography file (usually '*.bib' )
 
 %% Use of \listoftables is discouraged.
 %%
-\section*{Tables}
-\begin{table}[h!]
-\caption{Sample table title. This is where the description of the table should go.}
-      \begin{tabular}{cccc}
-        \hline
-           & B1  &B2   & B3\\ \hline
-        A1 & 0.1 & 0.2 & 0.3\\
-        A2 & ... & ..  & .\\
-        A3 & ..  & .   & .\\ \hline
-      \end{tabular}
-\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                               %%

@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{5}
+\begin{thebibliography}{11}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -43,69 +43,151 @@
 \csname PreBibitemsHook\endcsname
 
 %%% 1
-\bibitem{koon}
-\begin{barticle}
-\bauthor{\bsnm{Koonin}, \binits{E.V.}},
-\bauthor{\bsnm{Altschul}, \binits{S.F.}},
-\bauthor{\bsnm{Bork}, \binits{P.}}:
-\batitle{Brca1 protein products: functional motifs}.
-\bjtitle{Nat Genet}
-\bvolume{13},
-\bfpage{266}--\blpage{267}
-(\byear{1996})
-\end{barticle}
+\bibitem{app12010519}
+\begin{botherref}
+\oauthor{\bsnm{Ashfaq}, \binits{Z.}},
+\oauthor{\bsnm{Mumtaz}, \binits{R.}},
+\oauthor{\bsnm{Rafay}, \binits{A.}},
+\oauthor{\bsnm{Zaidi}, \binits{S.M.H.}},
+\oauthor{\bsnm{Saleem}, \binits{H.}},
+\oauthor{\bsnm{Mumtaz}, \binits{S.}},
+\oauthor{\bsnm{Shahid}, \binits{A.}},
+\oauthor{\bsnm{Poorter}, \binits{E.D.}},
+\oauthor{\bsnm{Moerman}, \binits{I.}}:
+Embedded ai-based digi-healthcare.
+Applied Sciences
+\textbf{12}(1)
+(2022).
+doi:\doiurl{10.3390/app12010519}
+\end{botherref}
 \endbibitem
 
 %%% 2
-\bibitem{khar}
+\bibitem{Varshney2019IoTBE}
 \begin{botherref}
-\oauthor{\bsnm{Kharitonov}, \binits{S.A.}},
-\oauthor{\bsnm{Barnes}, \binits{P.J.}}:
-Clinical Aspects of Exhaled Nitric Oxide.
-in press
+\oauthor{\bsnm{Varshney}, \binits{H.}},
+\oauthor{\bsnm{Allahloh}, \binits{A.S.}},
+\oauthor{\bsnm{Sarfraz}, \binits{M.W.}}:
+Iot based ehealth management system using arduino and google cloud firestore.
+2019 International Conference on Electrical, Electronics and Computer
+  Engineering (UPCON),
+1--6
+(2019)
 \end{botherref}
 \endbibitem
 
 %%% 3
-\bibitem{zvai}
-\begin{barticle}
-\bauthor{\bsnm{Zvaifler}, \binits{N.J.}},
-\bauthor{\bsnm{Burger}, \binits{J.A.}},
-\bauthor{\bsnm{Marinova-Mutafchieva}, \binits{L.}},
-\bauthor{\bsnm{Taylor}, \binits{P.}},
-\bauthor{\bsnm{Maini}, \binits{R.N.}}:
-\batitle{Mesenchymal cells, stromal derived factor-1 and rheumatoid arthritis
-  [abstract]}.
-\bjtitle{Arthritis Rheum}
-\bvolume{42},
-\bfpage{250}
-(\byear{1999})
-\end{barticle}
+\bibitem{0a1fa6938fc34df1a7b0b24631b3a22c}
+\begin{bchapter}
+\bauthor{\bsnm{Neyja}, \binits{M.}},
+\bauthor{\bsnm{Mumtaz}, \binits{S.}},
+\bauthor{\bsnm{Huq}, \binits{K.}},
+\bauthor{\bsnm{Busari}, \binits{S.}},
+\bauthor{\bsnm{Rodriguez}, \binits{J.}},
+\bauthor{\bsnm{Zhou}, \binits{Z.}}:
+\bctitle{An iot-based e-health monitoring system using ecg signal}.
+In: \bbtitle{GLOBECOM 2017 - 2017 IEEE Global Communications Conference},
+pp. \bfpage{1}--\blpage{6}.
+\bpublisher{Institute of Electrical and Electronics Engineers}, \blocation{???}
+(\byear{2017}).
+doi:\doiurl{10.1109/GLOCOM.2017.8255023}
+\end{bchapter}
 \endbibitem
 
 %%% 4
-\bibitem{xjon}
+\bibitem{9350514}
 \begin{bchapter}
-\bauthor{\bsnm{Jones}, \binits{X.}}:
-\bctitle{Zeolites and synthetic mechanisms}.
-In: \beditor{\bsnm{Smith}, \binits{Y.}} (ed.)
-\bbtitle{Proceedings of the First National Conference on Porous Sieves: 27-30
-  June 1996; Baltimore},
-pp. \bfpage{16}--\blpage{27}
-(\byear{1996}).
-\bcomment{Stoneham: Butterworth-Heinemann}
+\bauthor{\bsnm{Habib}, \binits{A.B.}},
+\bauthor{\bsnm{Tasnim}, \binits{T.}}:
+\bctitle{An ensemble hard voting model for cardiovascular disease prediction}.
+In: \bbtitle{2020 2nd International Conference on Sustainable Technologies for
+  Industry 4.0 (STI)},
+pp. \bfpage{1}--\blpage{6}.
+\bpublisher{IEEE Computer Society},
+\blocation{Los Alamitos, CA, USA}
+(\byear{2020}).
+doi:\doiurl{10.1109/STI50764.2020.9350514}.
+\burl{https://doi.ieeecomputersociety.org/10.1109/STI50764.2020.9350514}
 \end{bchapter}
 \endbibitem
 
 %%% 5
-\bibitem{marg}
-\begin{bbook}
-\bauthor{\bsnm{Margulis}, \binits{L.}}:
-\bbtitle{Origin of Eukaryotic Cells}.
-\bpublisher{Yale University Press},
-\blocation{New Haven}
-(\byear{1970})
-\end{bbook}
+\bibitem{9167660}
+\begin{bchapter}
+\bauthor{\bsnm{Pandey}, \binits{H.}},
+\bauthor{\bsnm{Prabha}, \binits{S.}}:
+\bctitle{Smart health monitoring system using iot and machine learning
+  techniques}.
+In: \bbtitle{2020 Sixth International Conference on Bio Signals, Images, and
+  Instrumentation (ICBSII)},
+pp. \bfpage{1}--\blpage{4}
+(\byear{2020}).
+doi:\doiurl{10.1109/ICBSII49132.2020.9167660}
+\end{bchapter}
+\endbibitem
+
+%%% 6
+\bibitem{9377873}
+\begin{bchapter}
+\bauthor{\bsnm{Hakak}, \binits{S.}},
+\bauthor{\bsnm{Ray}, \binits{S.}},
+\bauthor{\bsnm{Khan}, \binits{W.Z.}},
+\bauthor{\bsnm{Scheme}, \binits{E.}}:
+\bctitle{A framework for edge-assisted healthcare data analytics using
+  federated learning}.
+In: \bbtitle{2020 IEEE International Conference on Big Data (Big Data)},
+pp. \bfpage{3423}--\blpage{3427}
+(\byear{2020}).
+doi:\doiurl{10.1109/BigData50022.2020.9377873}
+\end{bchapter}
+\endbibitem
+
+%%% 7
+\bibitem{gbha}
+\begin{bchapter}
+\bauthor{\bsnm{G}, \binits{B.}},
+\bauthor{\bsnm{Kandi}, \binits{K.}},
+\bauthor{\bsnm{K}, \binits{S.}},
+\bauthor{\bsnm{S}, \binits{P.}},
+\bauthor{\bsnm{R}, \binits{D.}},
+\bauthor{\bsnm{R}, \binits{A.}}:
+\bctitle{Camisa: An ai solution for covid-19},
+pp. \bfpage{216}--\blpage{222}
+(\byear{2021}).
+doi:\doiurl{10.1109/ICDI3C53598.2021.00051}
+\end{bchapter}
+\endbibitem
+
+%%% 8
+\bibitem{max30102}
+\begin{botherref}
+MAX30102.
+\url{https://www.maximintegrated.com/en/products/interface/sensor-interface/MAX30102.html}
+\end{botherref}
+\endbibitem
+
+%%% 9
+\bibitem{pulse}
+\begin{botherref}
+Additional Vital Signs: Pulse & SpO2.
+\url{https://www.realfirstaid.co.uk/pulse}
+\end{botherref}
+\endbibitem
+
+%%% 10
+\bibitem{signs}
+\begin{botherref}
+Vital Signs.
+\url{https://medlineplus.gov/ency/article/002341.htm}
+\end{botherref}
+\endbibitem
+
+%%% 11
+\bibitem{olvl}
+\begin{botherref}
+Oxygen Levels, Pulse Oximeters, and COVID-19.
+\url{https://www.health.state.mn.us/diseases/coronavirus/pulseoximeter.html}
+\end{botherref}
 \endbibitem
 
 \end{thebibliography}
@@ -117,65 +199,136 @@ pp. \bfpage{16}--\blpage{27}
 <refgrp>
 
 <bibl id="B1">
-  <title><p>BRCA1 protein products: functional motifs</p></title>
+  <title><p>Embedded AI-Based Digi-Healthcare</p></title>
   <aug>
-    <au><snm>Koonin</snm><fnm>E V</fnm></au>
-    <au><snm>Altschul</snm><fnm>S F</fnm></au>
-    <au><snm>Bork</snm><fnm>P</fnm></au>
+    <au><snm>Ashfaq</snm><fnm>Z</fnm></au>
+    <au><snm>Mumtaz</snm><fnm>R</fnm></au>
+    <au><snm>Rafay</snm><fnm>A</fnm></au>
+    <au><snm>Zaidi</snm><fnm>SMH</fnm></au>
+    <au><snm>Saleem</snm><fnm>H</fnm></au>
+    <au><snm>Mumtaz</snm><fnm>S</fnm></au>
+    <au><snm>Shahid</snm><fnm>A</fnm></au>
+    <au><snm>Poorter</snm><fnm>ED</fnm></au>
+    <au><snm>Moerman</snm><fnm>I</fnm></au>
   </aug>
-  <source>Nat Genet</source>
-  <pubdate>1996</pubdate>
-  <volume>13</volume>
-  <fpage>266</fpage>
-  <lpage>267</lpage>
+  <source>Applied Sciences</source>
+  <pubdate>2022</pubdate>
+  <volume>12</volume>
+  <issue>1</issue>
+  <url>https://www.mdpi.com/2076-3417/12/1/519</url>
 </bibl>
 
 <bibl id="B2">
-  <title><p>Clinical aspects of exhaled nitric oxide</p></title>
+  <title><p>IoT Based eHealth Management System Using Arduino and Google Cloud
+  Firestore</p></title>
   <aug>
-    <au><snm>Kharitonov</snm><fnm>S A</fnm></au>
-    <au><snm>Barnes</snm><fnm>P J</fnm></au>
+    <au><snm>Varshney</snm><fnm>H</fnm></au>
+    <au><snm>Allahloh</snm><fnm>AS</fnm></au>
+    <au><snm>Sarfraz</snm><fnm>MW</fnm></au>
   </aug>
-  <source>Eur Respir J</source>
-  <inpress />
+  <source>2019 International Conference on Electrical, Electronics and Computer
+  Engineering (UPCON)</source>
+  <pubdate>2019</pubdate>
+  <fpage>1</fpage>
+  <lpage>6</lpage>
 </bibl>
 
 <bibl id="B3">
-  <title><p>Mesenchymal cells, stromal derived factor-1 and rheumatoid
-  arthritis [abstract]</p></title>
+  <title><p>An IoT-Based E-Health Monitoring System Using ECG
+  Signal</p></title>
   <aug>
-    <au><snm>Zvaifler</snm><fnm>N J</fnm></au>
-    <au><snm>Burger</snm><fnm>J A</fnm></au>
-    <au><snm>Marinova Mutafchieva</snm><fnm>L</fnm></au>
-    <au><snm>Taylor</snm><fnm>P</fnm></au>
-    <au><snm>Maini</snm><fnm>R N</fnm></au>
+    <au><snm>Neyja</snm><fnm>M</fnm></au>
+    <au><snm>Mumtaz</snm><fnm>S</fnm></au>
+    <au><snm>Huq</snm><fnm>{Kazi Mohammed Saidul}</fnm></au>
+    <au><snm>Busari</snm><fnm>S</fnm></au>
+    <au><snm>Rodriguez</snm><fnm>J</fnm></au>
+    <au><snm>Zhou</snm><fnm>Z</fnm></au>
   </aug>
-  <source>Arthritis Rheum</source>
-  <pubdate>1999</pubdate>
-  <volume>42</volume>
-  <fpage>s250</fpage>
+  <source>GLOBECOM 2017 - 2017 IEEE Global Communications Conference</source>
+  <publisher>Institute of Electrical and Electronics Engineers</publisher>
+  <pubdate>2017</pubdate>
+  <fpage>1</fpage>
+  <lpage>-6</lpage>
 </bibl>
 
 <bibl id="B4">
-  <title><p>Zeolites and synthetic mechanisms</p></title>
+  <title><p>An Ensemble Hard Voting Model for Cardiovascular Disease
+  Prediction</p></title>
   <aug>
-    <au><snm>Jones</snm><fnm>X</fnm></au>
+    <au><snm>Habib</snm><fnm>AB</fnm></au>
+    <au><snm>Tasnim</snm><fnm>T.</fnm></au>
   </aug>
-  <source>Proceedings of the First National Conference on Porous Sieves: 27-30
-  June 1996; Baltimore</source>
-  <editor>Y Smith</editor>
-  <pubdate>1996</pubdate>
-  <fpage>16</fpage>
-  <lpage>27</lpage>
+  <source>2020 2nd International Conference on Sustainable Technologies for
+  Industry 4.0 (STI)</source>
+  <publisher>Los Alamitos, CA, USA: IEEE Computer Society</publisher>
+  <pubdate>2020</pubdate>
+  <fpage>1</fpage>
+  <lpage>6</lpage>
+  <url>https://doi.ieeecomputersociety.org/10.1109/STI50764.2020.9350514</url>
 </bibl>
 
 <bibl id="B5">
-  <title><p>Origin of Eukaryotic Cells</p></title>
+  <title><p>Smart Health Monitoring System using IOT and Machine Learning
+  Techniques</p></title>
   <aug>
-    <au><snm>Margulis</snm><fnm>L</fnm></au>
+    <au><snm>Pandey</snm><fnm>H</fnm></au>
+    <au><snm>Prabha</snm><fnm>S.</fnm></au>
   </aug>
-  <publisher>New Haven: Yale University Press</publisher>
-  <pubdate>1970</pubdate>
+  <source>2020 Sixth International Conference on Bio Signals, Images, and
+  Instrumentation (ICBSII)</source>
+  <pubdate>2020</pubdate>
+  <fpage>1</fpage>
+  <lpage>4</lpage>
+</bibl>
+
+<bibl id="B6">
+  <title><p>A Framework for Edge-Assisted Healthcare Data Analytics using
+  Federated Learning</p></title>
+  <aug>
+    <au><snm>Hakak</snm><fnm>S</fnm></au>
+    <au><snm>Ray</snm><fnm>S</fnm></au>
+    <au><snm>Khan</snm><fnm>WZ</fnm></au>
+    <au><snm>Scheme</snm><fnm>E</fnm></au>
+  </aug>
+  <source>2020 IEEE International Conference on Big Data (Big Data)</source>
+  <pubdate>2020</pubdate>
+  <fpage>3423</fpage>
+  <lpage>3427</lpage>
+</bibl>
+
+<bibl id="B7">
+  <title><p>CAMISA: An AI Solution for COVID-19</p></title>
+  <aug>
+    <au><snm>G</snm><fnm>B</fnm></au>
+    <au><snm>Kandi</snm><fnm>K</fnm></au>
+    <au><snm>K</snm><fnm>S</fnm></au>
+    <au><snm>S</snm><fnm>P</fnm></au>
+    <au><snm>R</snm><fnm>D</fnm></au>
+    <au><snm>R</snm><fnm>A</fnm></au>
+  </aug>
+  <pubdate>2021</pubdate>
+  <fpage>216</fpage>
+  <lpage>222</lpage>
+</bibl>
+
+<bibl id="B8">
+  <title><p>MAX30102</p></title>
+  <url>https://www.maximintegrated.com/en/products/interface/sensor-interface/MAX30102.html</url>
+</bibl>
+
+<bibl id="B9">
+  <title><p>Additional Vital Signs: Pulse & SpO2</p></title>
+  <url>https://www.realfirstaid.co.uk/pulse</url>
+</bibl>
+
+<bibl id="B10">
+  <title><p>Vital Signs</p></title>
+  <url>https://medlineplus.gov/ency/article/002341.htm</url>
+</bibl>
+
+<bibl id="B11">
+  <title><p>Oxygen Levels, Pulse Oximeters, and COVID-19</p></title>
+  <url>https://www.health.state.mn.us/diseases/coronavirus/pulseoximeter.html</url>
 </bibl>
 
 </refgrp>
