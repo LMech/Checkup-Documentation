@@ -169,7 +169,7 @@ MAX30102.
 %%% 9
 \bibitem{pulse}
 \begin{botherref}
-Additional Vital Signs: Pulse & SpO2.
+Additional Vital Signs: Pulse and SpO2.
 \url{https://www.realfirstaid.co.uk/pulse}
 \end{botherref}
 \endbibitem
@@ -317,7 +317,7 @@ Oxygen Levels, Pulse Oximeters, and COVID-19.
 </bibl>
 
 <bibl id="B9">
-  <title><p>Additional Vital Signs: Pulse & SpO2</p></title>
+  <title><p>Additional Vital Signs: Pulse and SpO2</p></title>
   <url>https://www.realfirstaid.co.uk/pulse</url>
 </bibl>
 

@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex bmc_article"] 1657264930 "bmc_article.aux" "bmc_article.bbl" "bmc_article" 1657264930
+["bibtex bmc_article"] 1657274097 "bmc_article.aux" "bmc_article.bbl" "bmc_article" 1657274103
   "./bmc-mathphys.bst" 1435050408 61107 bd6c4e69bfcd6c29573298df46cec934 ""
-  "bmc_article.aux" 1657264930 2681 01c0b91a890ca78d25ff2bea6906b5c6 "pdflatex"
-  "bmc_article.bib" 1657264429 6502 19aa2c840ef375d6ae3c4908587c1c47 ""
+  "bmc_article.aux" 1657274103 2979 1f27334d5f687911f33e71ee07755926 "pdflatex"
+  "bmc_article.bib" 1657274095 6502 61c8dce483f702c06a3e3805e46342ef ""
   (generated)
   "bmc_article.bbl"
   "bmc_article.blg"
-["pdflatex"] 1657264930 "/home/lmech/Workspaces/docs/bmc_template/bmc_article.tex" "bmc_article.pdf" "bmc_article" 1657264930
-  "/home/lmech/Workspaces/docs/bmc_template/bmc_article.tex" 1657264889 46149 16a58e9599c8138cb93e906f3c2998d9 ""
+["pdflatex"] 1657274097 "/home/lmech/Workspaces/docs/bmc_template/bmc_article.tex" "bmc_article.pdf" "bmc_article" 1657274103
+  "/home/lmech/Workspaces/docs/bmc_template/bmc_article.tex" 1657274098 46149 16a58e9599c8138cb93e906f3c2998d9 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1650183167 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1650183167 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -15,8 +15,6 @@
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1650183167 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1650183167 996 a18840b13b499c08ac2de96a99eda4bc ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1650183167 1328 c834bbb027764024c09d3d2bf908b5f0 ""
-  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm" 1650183167 1332 f817c21a1ba54560425663374f1b651a ""
-  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1650183167 1332 1fde11373e221473104d6cc5993f046e ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm" 1650183167 1328 5442e22a7072966dbaf88ca900acf3f0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1650183167 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1650183167 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -39,8 +37,6 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm" 1650183167 1116 25a7bf822c58caf309a702ef79f4afbb ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1650183167 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1650183167 34811 78b52f49e893bcba91bd7581cdc144c0 ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb" 1650183167 32034 6149cc3792d7e291632994f6e6ca6d68 ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb" 1650183167 32166 b0c356b15f19587482a9217ce1d8fa67 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1650183167 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1650183167 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1650183167 36281 c355509802a035cadc5f15869451dcee ""
@@ -93,9 +89,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1657098062 4278762 af3ac1370db81a450c1118eabf1fe718 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1657098039 2927660 5de2bd6c83029a906e2e5be592e5d623 ""
-  "bmc_article.aux" 1657264930 2681 01c0b91a890ca78d25ff2bea6906b5c6 "pdflatex"
-  "bmc_article.bbl" 1657264930 10425 9a0b5a5dd8d2a77720d914a846b23272 "bibtex bmc_article"
-  "bmc_article.tex" 1657264889 46149 16a58e9599c8138cb93e906f3c2998d9 ""
+  "bmc_article.aux" 1657274103 2979 1f27334d5f687911f33e71ee07755926 "pdflatex"
+  "bmc_article.bbl" 1657274097 10429 6750d631d6e713161190dfa915d2cdb5 "bibtex bmc_article"
+  "bmc_article.tex" 1657274098 46149 16a58e9599c8138cb93e906f3c2998d9 ""
   "bmcart.cls" 1657098921 55703 b06dccfb46d680f7fe8bbd6c37bd3c40 ""
   "jpg_images/connection_page.jpg" 1657119794 170456 597e5b411262c3c5abf71d84a99ea9ef ""
   "jpg_images/user_warning.jpg" 1657119867 299199 ffaf3d69f4d45a8caef5c0e0643e21b8 ""
