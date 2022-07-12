@@ -88,7 +88,7 @@
 %%                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{The developement of a smart way for monitoring patients' vital signs}
+\title{The development of a smart way for monitoring patients' vital signs}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                          %%
@@ -326,17 +326,17 @@ disease and the need for medical personnel to share data from patients living in
 remote locations. This is critical since inhabitants in rural locations are
 often cut off from the metropolitan population and have limited access to
 medical care.\\
-The development and design of a wearable electrocardiogram (ECG) monitor using
-Arduino are discussed in this article. The system architecture consists of
-bio-sensing modules, a cloud (Google Firebase) for storing real-time patient
+In this article, the development and design of a wearable electrocardiogram (ECG) monitor using
+Arduino are discussed. The system architecture consists of
+biosensing modules, a cloud (Google Firebase) for storing real-time patient
 data, and a web interface for medical experts to view the data and provide rapid
-diagnosis and treatment of any developing cardiovascular illness. The study's
-main result is the creation of a low-cost, portable, and full real-time ECG
-capture, transmission, storage, and display system based on the Internet of
-Things. Medical practitioners can use this real-time data to diagnose heart
-disorders by   visualizing it. Furthermore, the information is sent into a
+diagnosis and treatment of any developing cardiovascular disease. The 
+main result of the study is the creation of a low-cost, portable and fully real-time ECG
+capture, transmission, storage and display system based on the Internet of
+Things. Medical professionals can use these real-time data to diagnose heart
+disorders by visualizing them. Furthermore, the information is sent to
 diagnostic software with a graphical user interface (GUI). The biggest
-disadvantage of this technology is that it may have difficulties with latency
+disadvantage of this technology is that it can have difficulties with latency
 and network access, particularly in remote locations. Our system includes an
 edge-based architecture that conducts local anomaly detection based on ML to
 deal with crises to handle this essential challenge.\\
@@ -360,25 +360,25 @@ disadvantage is that this article does not include the installation of smarter
 technologies based on AI and machine learning. As a result, additional
 modifications are still required to increase the diagnostic model's accuracy\\
 The researchers in \cite{9350514} believe that advances in machine learning
-technology have enabled early illness identification and diagnosis. This is
-especially beneficial in the case of chronic ailments, such as heart disease. A
-bespoke machine is proposed in this study. In the next ten years, a learning
-algorithm will be used to forecast the likelihood of cardiac disease. Hard
+technology have enabled early identification and diagnosis of diseases. This is
+especially beneficial in the case of chronic deseases, such as heart disease. A
+bespoke machine is proposed. In the next 10 years, a learning
+algorithm will be used to forecast the likelihood of cardiac disease. The hard
 Voting (HV) classifier is the name given to their algorithm. HV was created
-utilizing logistic Regression, Random Forest, Multilayer Perceptron, and other
-well-known classifiers  Nave Bayes classifiers with Gaussian Multiple risk
+utilizing logistic regression, random forest, multilayer perceptron, and other
+well-known classifiers  Nave Bayes classifiers with Gaussian multiple risk
 variables (e.g., age, gender) are taken into account by the meta-classifier. As
-inputs, sex, smoking, systolic blood pressure, and so on. Each of the four
-classifiers is employed, and  a vote is taken to determine whose forecast is the
+inputs, sex, smoking, systolic blood pressure, etc. Each of the four
+classifiers is used, and  a vote is taken to determine whose forecast is the
 best. The researchers utilized data from 3751 patients from a publicly available
-dataset on Kaggle. To eliminate any outliers, the authors utilized RobustScaler
-to scale the data. For training and testing purposes, the dataset was separated
+Kaggle data set. To eliminate outliers, the authors utilized RobustScaler
+to scale the data. For training and testing purposes, the data set was separated
 into two halves with an 80-20 percent split. The meta-classifier algorithm was
 successfully designed, with an accuracy of 88.42 percent and a precision value
-of 1.0 on the test. The construction of the ML model is the emphasis of this
+of 1.0 on the test. The construction of the ML model is the focus of this
 work, not any IoT-based ECG monitoring system. The authors did not test their
 model using real-time patient data. Not only are numerous vitals collected in
-our suggested architecture, but robust techniques are also applied to forecast
+our suggested architecture, robust techniques are also applied to forecast
 the health status of real-time patients.\\
 The researchers propose a method based on IoT and machine learning approaches to
 handle the issue of remote monitoring in \cite{9167660}. It integrates an
@@ -396,31 +396,31 @@ complete picture of the patient's health. To increase the performance of the ML
 model, more sensors must be added. As a result, we incorporated many vital sign
 sensors in our suggested system to monitor the chronic patient's health.\\
 Using federated learning on local Edge computing devices, Article \cite{9377873}
-presents another another smart data analytics architecture for e-healthcare
-applications. The need of incorporating federated learning into the system
-architecture stems from the sensitive medical data obtained through wearable
-devices being kept private and secure. The article provides a detailed
+presents another smart data analytics architecture for e-healthcare
+applications. The need to incorporate federated learning into system
+architecture stems from the requirement that sensitive medical data obtained through wearable
+devices are kept private and secure. The article provides a detailed
 explanation of the proposed framework, which is divided into three modules:
 cloud, edge, and application. The authors, on the other hand, make no mention of
 the system's implementation. The study's major focus was on identifying
-federated learning on the edge for e-health system designs in order to provide
+federated learning on the edge for e-health system designs to provide
 service quality (quick reaction time) and security (data security).\cite{gbha}
 proposes CAMISA, an AI-powered system for remote monitoring of COVID-19
 patients. The authors created a Wireless Sensor Network (WSN) device in the form
-of a smart shirt and nebulizer that is equipped with several sensors for
-obtaining a patient's physiological information. A patient's pulse, SpO2 level,
-temperature, and breathing rate are all measured by the system. If any of these
-metrics surpass their threshold levels, notifications are sent to the hospital,
+of a smart shirt and nebulizer that is equipped with several sensors to obtain
+physiological information from the patient. The system measures a patient's pulse, SpO2 level,
+temperature, and breathing rate. If any of these
+metrics exceed their threshold levels, notifications are sent to the hospital,
 including the patient's current location so that he or she can be sent to
 critical care as soon as possible. . In addition, the authors have used a neural
-network model to estimate the probability of a user contracting a coronavirus.
+network model to estimate the probability that a user contracts a coronavirus.
 The Artificial Neural Network (ANN) model takes 20 characteristics into account,
 such as the existence of a cold, fever, or cough, which are all indicators of
 coronavirus infection. The health monitoring app collects these parameters from
-the user via a questionnaire and determines whether or not the patient has
+the user via a questionnaire and determines whether the patient has
 COVID-19. Using the Thingspeak IoT platform, the app also visualises the sensor
-data from the system. This device may be used to remotely monitor COVID-19
-patients in real time to help hospitals curb the virus's spread.
+data from the system. This device can be used to remotely monitor COVID-19
+patients in real time to help hospitals curb the spread of the virus.
 
 \section*{Methodology}
 The proposed method revolves around developing a system with the capability of
@@ -666,7 +666,7 @@ integrated with the system.
 The ML model has achieved an mea of ± 1.9461, using the FCN model on the spo2
 signs and the algorithm used in the heart rate achieved unexpected result using
 a technique called photoplethysmography (PPG) - is an optically acquired
-plethysmogram that may be used to identify changes in blood volume in the
+plethysmogram that can be used to identify changes in blood volume in the
 tissue's microvascular bed.\\
 We can detect the variability of reflected light and extract the variation of
 blood flow by shining a light into a blood irrigated tissue. As we all know,
@@ -747,35 +747,35 @@ discomfort to the patient. To make rapid and trustworthy judgments locally, the
 system employs edge computing techniques. This function reduces latency and
 identifies any abnormal situations. The best feature of this programme is that
 it can be used on any mobile device that has a camera and a flash.\\
-Even from a distance, the patient and guardian can watch the patient's vital
+Even from a distance, the patient and the guardian can view the patient's vital
 signs. The established system may be proven to be a requirement in the medical
-sector, particularly in today's time when people rely heavily on technology and
+sector, particularly in today's time, when people rely heavily on technology and
 expect smart solutions to their day-to-day difficulties. The suggested method
-not only relieves people from their daily exams, but it also helps the medical
-personnel by decreasing their workload and allowing them to handle patients
-remotely. This prototype might be utilized at medical camps and places where
+not only relieves people of their daily exams, but also helps medical
+personnel by reducing their workload and allowing them to handle patients
+remotely. This prototype might be used in medical camps and places where
 established hospitals are scarce. In contrast to traditional healthcare, which
-is exclusively available in hospitals, the new paradigm of remotely monitoring
-patients using cutting-edge technologies like as IoT and AI is the future of
-health care and may assist us in leveraging these technologies and maximizing
-their advantages. More sensors, i.e., measured vitals, such as an
+is exclusively available in hospitals, the new paradigm of remote monitoring of
+patients using cutting-edge technologies such as IoT and AI is the future of
+healthcare and can assist us in leveraging these technologies and maximizing
+their advantages. More sensors, that is, measured vitals, such as an
 electrocardiogram, blood pressure, or respiration rate, can be added as part of
-this project's future development. More decision-making elements can be
-introduced to the project to identify the likelihood of COVID, especially in the
-current condition of COVID. Because the model is simple, it may be used in
+the future development of this project. More decision-making elements can be
+introduced into the project to identify the likelihood of COVID, especially in the
+current condition of COVID. Because the model is simple, it cam be used in
 conjunction with additional characteristics to develop for a specific illness.
 The AI component of the system may be enhanced to provide trend analysis on the
 user's data. Because medicine is such a wide subject and various disorders might
 have similar symptoms, a model with extremely high precision and accuracy would
-be necessary. In addition to the model and the site, the prototype may be
-utilized as a main registration step in hospitals, saving medical personnel time
+be necessary. In addition to the model and  site, the prototype can be
+used as a main registration step in hospitals, saving medical personnel time
 in gathering information and measuring vitals. As a result, it will be an
 excellent addition for automating the register system in hospitals. Furthermore,
 the concept may be expanded into a remote clinic where patients can select
 between continuous monitoring and consulting services. Furthermore, the project
 may be marketed by developing and deploying more units in a private or public
 hospital for initial testing, and if successful, more units can be created and
-deployed. As a result, the produced prototype is adaptable and may serve as a
+deployed. As a result, the prototype produced is adaptable and may serve as a
 useful component in a variety of applications.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
