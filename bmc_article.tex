@@ -54,6 +54,8 @@
 \usepackage{placeins}
 \usepackage{subcaption}
 \usepackage{amsthm,amsmath}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                             %%
@@ -326,13 +328,13 @@ disease and the need for medical personnel to share data from patients living in
 remote locations. This is critical since inhabitants in rural locations are
 often cut off from the metropolitan population and have limited access to
 medical care.\\
-In this article, the development and design of a wearable electrocardiogram (ECG) monitor using
-Arduino are discussed. The system architecture consists of
+In this article, the development and design of a wearable electrocardiogram
+(ECG) monitor using Arduino are discussed. The system architecture consists of
 biosensing modules, a cloud (Google Firebase) for storing real-time patient
 data, and a web interface for medical experts to view the data and provide rapid
-diagnosis and treatment of any developing cardiovascular disease. The 
-main result of the study is the creation of a low-cost, portable and fully real-time ECG
-capture, transmission, storage and display system based on the Internet of
+diagnosis and treatment of any developing cardiovascular disease. The main
+result of the study is the creation of a low-cost, portable and fully real-time
+ECG capture, transmission, storage and display system based on the Internet of
 Things. Medical professionals can use these real-time data to diagnose heart
 disorders by visualizing them. Furthermore, the information is sent to
 diagnostic software with a graphical user interface (GUI). The biggest
@@ -362,24 +364,24 @@ modifications are still required to increase the diagnostic model's accuracy\\
 The researchers in \cite{9350514} believe that advances in machine learning
 technology have enabled early identification and diagnosis of diseases. This is
 especially beneficial in the case of chronic deseases, such as heart disease. A
-bespoke machine is proposed. In the next 10 years, a learning
-algorithm will be used to forecast the likelihood of cardiac disease. The hard
-Voting (HV) classifier is the name given to their algorithm. HV was created
-utilizing logistic regression, random forest, multilayer perceptron, and other
-well-known classifiers  Nave Bayes classifiers with Gaussian multiple risk
-variables (e.g., age, gender) are taken into account by the meta-classifier. As
-inputs, sex, smoking, systolic blood pressure, etc. Each of the four
-classifiers is used, and  a vote is taken to determine whose forecast is the
-best. The researchers utilized data from 3751 patients from a publicly available
-Kaggle data set. To eliminate outliers, the authors utilized RobustScaler
-to scale the data. For training and testing purposes, the data set was separated
-into two halves with an 80-20 percent split. The meta-classifier algorithm was
-successfully designed, with an accuracy of 88.42 percent and a precision value
-of 1.0 on the test. The construction of the ML model is the focus of this
-work, not any IoT-based ECG monitoring system. The authors did not test their
-model using real-time patient data. Not only are numerous vitals collected in
-our suggested architecture, robust techniques are also applied to forecast
-the health status of real-time patients.\\
+bespoke machine is proposed. In the next 10 years, a learning algorithm will be
+used to forecast the likelihood of cardiac disease. The hard Voting (HV)
+classifier is the name given to their algorithm. HV was created utilizing
+logistic regression, random forest, multilayer perceptron, and other well-known
+classifiers  Nave Bayes classifiers with Gaussian multiple risk variables (e.g.,
+age, gender) are taken into account by the meta-classifier. As inputs, sex,
+smoking, systolic blood pressure, etc. Each of the four classifiers is used, and
+a vote is taken to determine whose forecast is the best. The researchers
+utilized data from 3751 patients from a publicly available Kaggle data set. To
+eliminate outliers, the authors utilized RobustScaler to scale the data. For
+training and testing purposes, the data set was separated into two halves with
+an 80-20 percent split. The meta-classifier algorithm was successfully designed,
+with an accuracy of 88.42 percent and a precision value of 1.0 on the test. The
+construction of the ML model is the focus of this work, not any IoT-based ECG
+monitoring system. The authors did not test their model using real-time patient
+data. Not only are numerous vitals collected in our suggested architecture,
+robust techniques are also applied to forecast the health status of real-time
+patients.\\
 The researchers propose a method based on IoT and machine learning approaches to
 handle the issue of remote monitoring in \cite{9167660}. It integrates an
 IoT-based sensor network with Arduino, namely a pulse sensor. On the data
@@ -398,29 +400,29 @@ sensors in our suggested system to monitor the chronic patient's health.\\
 Using federated learning on local Edge computing devices, Article \cite{9377873}
 presents another smart data analytics architecture for e-healthcare
 applications. The need to incorporate federated learning into system
-architecture stems from the requirement that sensitive medical data obtained through wearable
-devices are kept private and secure. The article provides a detailed
-explanation of the proposed framework, which is divided into three modules:
-cloud, edge, and application. The authors, on the other hand, make no mention of
-the system's implementation. The study's major focus was on identifying
-federated learning on the edge for e-health system designs to provide
-service quality (quick reaction time) and security (data security).\cite{gbha}
-proposes CAMISA, an AI-powered system for remote monitoring of COVID-19
-patients. The authors created a Wireless Sensor Network (WSN) device in the form
-of a smart shirt and nebulizer that is equipped with several sensors to obtain
-physiological information from the patient. The system measures a patient's pulse, SpO2 level,
-temperature, and breathing rate. If any of these
-metrics exceed their threshold levels, notifications are sent to the hospital,
-including the patient's current location so that he or she can be sent to
-critical care as soon as possible. . In addition, the authors have used a neural
-network model to estimate the probability that a user contracts a coronavirus.
-The Artificial Neural Network (ANN) model takes 20 characteristics into account,
-such as the existence of a cold, fever, or cough, which are all indicators of
-coronavirus infection. The health monitoring app collects these parameters from
-the user via a questionnaire and determines whether the patient has
-COVID-19. Using the Thingspeak IoT platform, the app also visualises the sensor
-data from the system. This device can be used to remotely monitor COVID-19
-patients in real time to help hospitals curb the spread of the virus.
+architecture stems from the requirement that sensitive medical data obtained
+through wearable devices are kept private and secure. The article provides a
+detailed explanation of the proposed framework, which is divided into three
+modules: cloud, edge, and application. The authors, on the other hand, make no
+mention of the system's implementation. The study's major focus was on
+identifying federated learning on the edge for e-health system designs to
+provide service quality (quick reaction time) and security (data
+security).\cite{gbha} proposes CAMISA, an AI-powered system for remote
+monitoring of COVID-19 patients. The authors created a Wireless Sensor Network
+(WSN) device in the form of a smart shirt and nebulizer that is equipped with
+several sensors to obtain physiological information from the patient. The system
+measures a patient's pulse, SpO2 level, temperature, and breathing rate. If any
+of these metrics exceed their threshold levels, notifications are sent to the
+hospital, including the patient's current location so that he or she can be sent
+to critical care as soon as possible. . In addition, the authors have used a
+neural network model to estimate the probability that a user contracts a
+coronavirus. The Artificial Neural Network (ANN) model takes 20 characteristics
+into account, such as the existence of a cold, fever, or cough, which are all
+indicators of coronavirus infection. The health monitoring app collects these
+parameters from the user via a questionnaire and determines whether the patient
+has COVID-19. Using the Thingspeak IoT platform, the app also visualises the
+sensor data from the system. This device can be used to remotely monitor
+COVID-19 patients in real time to help hospitals curb the spread of the virus.
 
 \section*{Methodology}
 The proposed method revolves around developing a system with the capability of
@@ -470,7 +472,8 @@ allow delivery of vital signs to the mobile device.
 \begin{figure}[h!]
   \includegraphics[width=.75\linewidth]{png_images/circuit_desing.png}
   \caption{\csentence{Bluetooth enabled oximeter circuit design.}
-      An illustration shows all the required components and connections of the circuit.}
+      An illustration shows all the required components and connections of the
+      circuit.}
 \end{figure}
 \FloatBarrier
 
@@ -496,13 +499,18 @@ time for each peak the heart rate can be calculated according to Equation 1.\\
 The process also takes the advantage of  the changing levels different light
 absorption of the blood, but unlike the heart rate the process depends on the
 different absorption of light found in the hemoglobin in the oxygenated and
-deoxygenated states as show in Fig 3.2, Deoxygenated hemoglobin (Hb) absorbs
+deoxygenated states as show in Figure 2, Deoxygenated hemoglobin (Hb) absorbs
 more light red than infrared light, while oxygenated hemoglobin (HbO2) absorbs
 more infrared light than red light by and with information in mind Eq.(2) is
 applied, since the final value requires empirical calibration between the ration
 and the final spo2 Eq.(3) is applied which proposed by MAXIM%
-% TODO: put the figure and add the equtaion labels
-%
+\begin{figure}[h!]
+  \includegraphics[width=.5\linewidth]{png_images/hbvshbo2.png}
+  \caption{\csentence{Absorption spectra of hemoglobin.}
+      A line chart shows the different interaction between oxygenated blood and
+      deoxygenated blood with light.}
+\end{figure}
+\FloatBarrier
 \[
  Ratio = \frac{AC_r/DC_r}{AC_{ir}/DC_{ir}}
  \tag{2}
@@ -517,8 +525,8 @@ and the final spo2 Eq.(3) is applied which proposed by MAXIM%
 \subsubsection*{Data Collection}
 Data have been collected using a Redmi Note 8 Pro phone consisting of 67 videos
 with 30fps captured by asking each patient for putting the index finger on the
-camera and the flash as shown in the Figure 3 for at least 8 seconds, the
-labels for each video recorded using GRANZIA pulse-304.
+camera and the flash as shown in the Figure 3 for at least 8 seconds, the labels
+for each video recorded using GRANZIA pulse-304.
 \begin{figure}[h!]
   \includegraphics[width=.5\linewidth]{png_images/collecting_data_picture.png}
   \caption{\csentence{Data collection method.}
@@ -526,7 +534,6 @@ labels for each video recorded using GRANZIA pulse-304.
       the oximeter and recording all the values.}
 \end{figure}
 \FloatBarrier
-% TODO: change the labels
 \subsubsection*{Preprocessing}
 Each video divided into array of frames, each frame converted into a signal of
 the mean values of each RGB color channel, then the final arrays down-sampled to
@@ -565,11 +572,11 @@ and medical data through web services.
 \subsubsection*{User Interface}
 The interface designed to include all the main system functions available to the
 user through the main pages ( home - connections - profile) as shown in Figure
-6, home page includes the ability to connect to the circuit using the upper
-plus button, also show all the vital signs measurement  as time series chart to
-view the whole day  data, connections page show all the connections and requests
-and the upper text field give the user the ability  to send connection request
-using email, and profile page gives the user the ability to change all his data.
+6, home page includes the ability to connect to the circuit using the upper plus
+button, also show all the vital signs measurement  as time series chart to view
+the whole day  data, connections page show all the connections and requests and
+the upper text field give the user the ability  to send connection request using
+email, and profile page gives the user the ability to change all his data.
 \begin{figure}[h!]
   \includegraphics[width=.9\linewidth]{png_images/applications_screens.png}
   \caption{\csentence{Application main screens.}
@@ -582,7 +589,7 @@ using email, and profile page gives the user the ability to change all his data.
 After training the ML model using Tensorflow Keras the trained model converted
 to TfLite file format then the generated file included in the application assets
 ready for use, in order to apply the model the user asked to put the index
-finger on the main camera and flash as show in Figure  3 for 8 seconds (280
+finger on the main camera and flash as show in Figure 3 for 8 seconds (280
 frames) converted from YUV to RGB file format keeping only the mean value of
 each channel for each frame, then the 154 middle values of the values are used
 as it represent the most stable values for the signal and  to mimic the training
@@ -594,15 +601,34 @@ before the Algorithm. (1)  is applied as the mobile camera work on a similar
 manner as photo-diode and the flash as the LED for detecting each peak appears
 in the heart beat utilizing the collected data in the process of applying the ML
 model, however the red channel only used to include the time stamp for each
-recorded value then applying Equation (1). 
+recorded value then applying Equation (1).
+\begin{algorithm}
+{Algorithm (1): Heart Rate Measurement Using Mobile Camera}\label{alg:cap}
+\begin{algorithmic}
+\Require $rPPG \gets RedSignal$
+\Ensure $len(rPPG) > 154$
+\State $threshold \gets mean(rPPG) + max(rPPG) / 2$
+\State $previousTimestamp \gets 0$
+\State $tempBPM \gets []$
+\State $bPM \gets 0$
+\For{$i = 1$ to $len(rPPG)$}
+\If{$rPPG[i] > threshold $ and $rPPG[i-1] < threshold$}
+\If{$previousTimestamp$ not equal to $0$}\\
+$tempBPM.add(60,000 / rPPG[i].Timestamp - previousTimestamp$)
+\EndIf
+\EndIf
+\EndFor
+\State $bPM \gets mean(tempBPM)$
+\end{algorithmic}
+\end{algorithm}
+\FloatBarrier
 
 \subsubsection*{Handeling User's Data}
 After receiving the data from either the Bluetooth interface or internally the
-data shown in the screen combined with measurement time as show in Figure 7
-then stored in the Firebase real time database which allows near real-time
-experience for storing, fetching the data and listen to the data changes from
-other devices which allow each user to share his real time data alongside with
-other data.
+data shown in the screen combined with measurement time as show in Figure 7 then
+stored in the Firebase real time database which allows near real-time experience
+for storing, fetching the data and listen to the data changes from other devices
+which allow each user to share his real time data alongside with other data.
 \begin{figure}[h!]
   \includegraphics[width=.3\linewidth]{jpg_images/connection_page.jpg}
   \caption{\csentence{Connection page.}
@@ -617,40 +643,39 @@ Due to the extensive amount of collected data from each user giving the
 importance for each piece of data, all the collected data stored in the cloud
 for backup and for further analysis; Users' non-sequential data e.g. name, birth
 date  stored using Firebase's “Cloud Firestore Database” service as a key-value
-pairs and other users can access the data through email
-as key, furthermore the sequential data e.g. heart rate and blood oxygen stored
-using Firebase's “Cloud Real-time Database” for near real time experience for
-storing an accessing the data also as key-value pairs and using the measurement
-time as key after converting the value to Unix time and
-the connections can have a real time monitoring  view of the data by starting a
-listener on the user's document.
+pairs and other users can access the data through email as key, furthermore the
+sequential data e.g. heart rate and blood oxygen stored using Firebase's “Cloud
+Real-time Database” for near real time experience for storing an accessing the
+data also as key-value pairs and using the measurement time as key after
+converting the value to Unix time and the connections can have a real time
+monitoring  view of the data by starting a listener on the user's document.
 
 \subsubsection*{Cloud Warnings}
 All the received vital signs values compared to the known normal value according
 to \cite{pulse} and classified as normal or abnormal; in case of abnormality the
 users' phone automatically sends a notification warning to the users' phone with
-a message of the related abnormal reading as shown in Figure 7 (a) and to each of
-the connection send a notification warning with the name of the connection and
-the related abnormal reading as shown in Figure 8 (b).
+a message of the related abnormal reading as shown in Figure 8 (a) and to each
+of the connection send a notification warning with the name of the connection
+and the related abnormal reading as shown in Figure 8 (b).
 \begin{figure}[h!]
   \begin{subfigure}{0.45\textwidth}
-  \includegraphics[width=.5\linewidth]{jpg_images/user_warning.jpg}
-  \caption{\csentence{User low oxygen saturation warning.}
+  \includegraphics[width=.5\linewidth]{png_images/user_warning.png}
+  \caption{\csentence{User low SpO2 warning.}
       A screen shot of the warning appeared to the user after detecting a low
       oxygen saturation case.}
     \end{subfigure}
     \begin{subfigure}{0.45\textwidth}
-    \includegraphics[width=\linewidth]{png_images/connection_warnning.png}
-  \caption{\csentence{Connection low oxygen saturation warning.}
+    \includegraphics[width=\linewidth]{png_images/connection_warning.png}
+  \caption{\csentence{Connection low SpO2 warning.}
   A screen shot of the warning appeared to the user after detecting a low oxygen
   saturation case appeared on one of the connections.}
     \end{subfigure}
     \caption{\csentence{Cloud warnings.}
-    A screen shots illustrates cloud warnings from both user and connection prospective.}
+    A screen shots illustrates cloud warnings from both user and connection
+    prospective.}
     \end{figure}
 \FloatBarrier
 
-% TODO: put the figure
 \subsubsection*{External Gadget Support}
 Due to the increasing popularity of the fitness gadget e.g. smart bands and
 smart watches, and gadgets ability for making the same measurement with
@@ -660,7 +685,51 @@ almost impossible to integrate all the marketed gadget, fortunately most of the
 gadgets integrated with Google Fit which provides API for accessing the required
 data and more. So, all the gadgets integrated with Google Fit API can be
 integrated with the system.
-% TODO: put the figure
+
+\subsection*{Recommendation System}
+\subsubsection*{Data Storage}
+Due to the extensive amount of collected data from each user giving the
+importance for each piece of data, all the collected data stored in the cloud
+for backup and for further analysis; Users' non-sequential data e.g. name, birth
+date  stored using Firebase's “Cloud Firestore Database” service as a key-value
+pairs and other users can access the data through email as key, furthermore the
+sequential data e.g. heart rate and blood oxygen stored using Firebase's “Cloud
+Real-time Database” for near real time experience for storing an accessing the
+data also as key-value pairs and using the measurement time as key after
+converting the value to Unix time and the connections can have a real time
+monitoring  view of the data by starting a listener on the user's document.
+
+\subsubsection*{Objective}
+The main problem is the ever-growing population of cardiovascular patients
+hardly managed at hospitals. This world and the subsequent lifestyle changes led
+to a drastic increase in cardiovascular diseases. Aside from infectious diseases
+breaks out, hospital are flooded with people, thus we needed a system to help in
+managing this problem and even helping in managing some conditions independently
+that will reflect in the other aspects of this problem.
+
+\subsubsection*{Development}
+The bot will be implemented in the android platform, since the data entered from
+patient can be retrieved easily with this platform, thus it can provide good
+support for heart rate and oxygen saturation monitoring. The bot is a text-based
+chat bot, since text data can be easily parsed and processed in android as a way
+to communicate with the user through message, and it is able to provide the user
+medical advice according to data the user entered.
+
+\subsubsection*{Features}
+Since the bot can be used to check on patients as a way to support them in their
+medical condition, so our objective in this project is to provide as much help
+as possible to patients by giving them some advices about the risk level and
+suitable recommendation based on their condition. The bot's current version
+provides the basic capability of giving the user general advice about the risk
+level and the best way to check on his own heart rate and oxygen saturation as
+show in Figure 9.
+\begin{figure}[h!]
+  \includegraphics[width=.9\linewidth]{png_images/chatbot.png}
+  \caption{\csentence{Chatbot interaction.}
+      A screenshots illustrates the interaction between the user and the
+      proposed chatbot.}
+\end{figure}
+\FloatBarrier
 
 \section*{Results}
 The ML model has achieved an mea of ± 1.9461, using the FCN model on the spo2
@@ -684,9 +753,8 @@ BPM value with` an attenuation coefficient so we don't have abrupt changes.\\
 The circuit is integrated with our mobile application and it measures the vital
 signs every two minutes. The normal ranges of these two vital signs: \\(a) Heart
 Rate: 60 to 100 beats per minute \cite{signs} \\(b) Blood OxygenSaturation: 95\%
-or higher \cite{olvl} These tables show the real data collected from the GRANZIA
-pulse oximeter and our application:
-\section*{Tables}
+or higher \cite{olvl} Table 1, 2 shows the real data collected from the GRANZIA
+pulse oximeter and our application and visualized in Figures 10 (a), 10 (b):
 \begin{table}[h!]
 \caption{SpO2 predictions against the ground truth. This table shows the values predicted by the SpO2 ML model, the ground truth and error rate.}
       \begin{tabular}{cccc}
@@ -707,7 +775,7 @@ pulse oximeter and our application:
         13& 98 & 99 & 1\%\\ \hline
       \end{tabular}
 \end{table}
-\section*{Tables}
+
 \begin{table}[h!]
 \caption{Heart rate generated values against the ground truth. This table shows the values calculated by the Mobile heart rate algorithm, the ground truth and error rate.}
       \begin{tabular}{cccc}
@@ -728,6 +796,24 @@ pulse oximeter and our application:
         13& 120& 118 & 2\%\\ \hline
       \end{tabular}
 \end{table}
+\begin{figure}[h!]
+  \begin{subfigure}{0.45\textwidth}
+  \includegraphics[width=\linewidth]{png_images/spo2_results_viz.png}
+  \caption{\csentence{SpO2 model results.}
+      A visualization shows the actual results from the the professional
+      oximeter against the prediced from the ML model.}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+    \includegraphics[width=\linewidth]{png_images/heartrate_results_viz.png}
+  \caption{\csentence{Heart rate algorithm results.}
+  A visualization shows the actual results from the the professional
+  oximeter against the evaluated from the heart rate algorithm.}
+    \end{subfigure}
+    \caption{\csentence{Result charts.}
+    A mulit-line charts visualizes the the real value aginest the application.}
+    \end{figure}
+\FloatBarrier
+
 \section*{Conclusion}
 This article constructed an IoT-based prototype and applied ML and AI approaches
 to the system. The Internet of Things gadget allows for smart monitoring of
@@ -751,32 +837,32 @@ Even from a distance, the patient and the guardian can view the patient's vital
 signs. The established system may be proven to be a requirement in the medical
 sector, particularly in today's time, when people rely heavily on technology and
 expect smart solutions to their day-to-day difficulties. The suggested method
-not only relieves people of their daily exams, but also helps medical
-personnel by reducing their workload and allowing them to handle patients
-remotely. This prototype might be used in medical camps and places where
-established hospitals are scarce. In contrast to traditional healthcare, which
-is exclusively available in hospitals, the new paradigm of remote monitoring of
-patients using cutting-edge technologies such as IoT and AI is the future of
-healthcare and can assist us in leveraging these technologies and maximizing
-their advantages. More sensors, that is, measured vitals, such as an
-electrocardiogram, blood pressure, or respiration rate, can be added as part of
-the future development of this project. More decision-making elements can be
-introduced into the project to identify the likelihood of COVID, especially in the
-current condition of COVID. Because the model is simple, it cam be used in
-conjunction with additional characteristics to develop for a specific illness.
-The AI component of the system may be enhanced to provide trend analysis on the
-user's data. Because medicine is such a wide subject and various disorders might
-have similar symptoms, a model with extremely high precision and accuracy would
-be necessary. In addition to the model and  site, the prototype can be
-used as a main registration step in hospitals, saving medical personnel time
-in gathering information and measuring vitals. As a result, it will be an
-excellent addition for automating the register system in hospitals. Furthermore,
-the concept may be expanded into a remote clinic where patients can select
-between continuous monitoring and consulting services. Furthermore, the project
-may be marketed by developing and deploying more units in a private or public
-hospital for initial testing, and if successful, more units can be created and
-deployed. As a result, the prototype produced is adaptable and may serve as a
-useful component in a variety of applications.
+not only relieves people of their daily exams, but also helps medical personnel
+by reducing their workload and allowing them to handle patients remotely. This
+prototype might be used in medical camps and places where established hospitals
+are scarce. In contrast to traditional healthcare, which is exclusively
+available in hospitals, the new paradigm of remote monitoring of patients using
+cutting-edge technologies such as IoT and AI is the future of healthcare and can
+assist us in leveraging these technologies and maximizing their advantages. More
+sensors, that is, measured vitals, such as an electrocardiogram, blood pressure,
+or respiration rate, can be added as part of the future development of this
+project. More decision-making elements can be introduced into the project to
+identify the likelihood of COVID, especially in the current condition of COVID.
+Because the model is simple, it cam be used in conjunction with additional
+characteristics to develop for a specific illness. The AI component of the
+system may be enhanced to provide trend analysis on the user's data. Because
+medicine is such a wide subject and various disorders might have similar
+symptoms, a model with extremely high precision and accuracy would be necessary.
+In addition to the model and  site, the prototype can be used as a main
+registration step in hospitals, saving medical personnel time in gathering
+information and measuring vitals. As a result, it will be an excellent addition
+for automating the register system in hospitals. Furthermore, the concept may be
+expanded into a remote clinic where patients can select between continuous
+monitoring and consulting services. Furthermore, the project may be marketed by
+developing and deploying more units in a private or public hospital for initial
+testing, and if successful, more units can be created and deployed. As a result,
+the prototype produced is adaptable and may serve as a useful component in a
+variety of applications.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                          %%
@@ -793,7 +879,10 @@ useful component in a variety of applications.
     Text for this section \ldots
 
 \section*{Acknowledgements}
-  Text for this section \ldots
+We would like to express our very great appreciation to Dr Mohammed Fawzy out
+mentor and supervisor for his valuable and constructive suggestions during the planning and development of
+this research work. His willingness to give his time so generously has been very
+much appreciated.\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                  The Bibliography                       %%
 %%                                                         %%
